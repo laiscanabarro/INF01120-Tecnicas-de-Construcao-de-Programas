@@ -72,9 +72,11 @@ public abstract class Triangulo implements Poligono {
         return (base*altura)/2;
     }
 
+    @Override
     public double calculaArea(){ //calcula a area do triangulo a partir de seus atributos de base e altura
         return(this.base*this.altura)/2;
     }
 
+    @Override
     public abstract void imprimeTipoPoligono();    
 }
