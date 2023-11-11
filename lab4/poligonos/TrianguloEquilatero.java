@@ -18,7 +18,7 @@ public class TrianguloEquilatero extends Triangulo {
     }
 
     @Override 
-    public void imprimeTipoPoligono() { //imprime o tipo do triangulo
+    public void imprimeTipoPoligono() { //imprime Triângulo Equilátero
         System.out.println("Triângulo Equilátero");
     }
 
