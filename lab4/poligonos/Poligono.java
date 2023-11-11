@@ -6,5 +6,4 @@ interface Poligono {
     public float calculaArea();
 
     public void imprimeTipoPoligono();
-
 }
