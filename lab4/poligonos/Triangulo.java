@@ -72,7 +72,7 @@ public abstract class Triangulo implements Poligono {
         return (base*altura)/2;
     }
 
-    public float calculaArea(){
+    public float calculaArea(){ //calcula a area do triangulo a partir de seus atributos de base e altura
         return(this.base*this.altura)/2;
     }
 
