@@ -14,7 +14,7 @@ public class Turma {
     final int MIN_ALUNOS_TURMA = 10;
     final int MAX_MONITORES_TURMA = 3;
 
-    public Turma() { //reseta os atributos da classe
+    public Turma() { 
         this.numAlunos = 0;
         this.numMonitores = 0;
         this.professor = new Professor();
@@ -22,7 +22,7 @@ public class Turma {
         this.alunos = new ArrayList<Aluno>();
     }
 
-    public Turma(Professor professor, ArrayList<Monitor> monitores, ArrayList<Aluno> alunos) { //atribui os valores dos parametros aos atributos da classe
+    public Turma(Professor professor, ArrayList<Monitor> monitores, ArrayList<Aluno> alunos) { 
         this.numAlunos = alunos.size();
         if (numAlunos > MAX_ALUNOS_TURMA) {
             System.out.println("O número de alunos é maior que o permitido.");
@@ -44,19 +44,19 @@ public class Turma {
         this.professor = professor;
     }
 
-    public int getNumAlunos() { //retorna o numero de alunos
+    public int getNumAlunos() { 
         return this.numAlunos;
     }
 
-    public int getNumMonitores() { //retorna o numero de monitores
+    public int getNumMonitores() { 
         return this.numMonitores;
     }
 
-    public void setProfessor(Professor professor) { //altera o professor da turma
+    public void setProfessor(Professor professor) { 
         this.professor = professor;
     }
 
-    public void setMonitores(ArrayList<Monitor> monitores) { //altera a lista de monitores da turma
+    public void setMonitores(ArrayList<Monitor> monitores) { 
         if ((monitores.size()) > MAX_MONITORES_TURMA) {
             System.out.println("O número de monitores é maior que o permitido.");
         } else {
@@ -64,7 +64,7 @@ public class Turma {
         }
     }
 
-    public void setAlunos(ArrayList<Aluno> alunos) { //altera a lista de monitores da turma
+    public void setAlunos(ArrayList<Aluno> alunos) { 
         if ((alunos.size()) > MAX_ALUNOS_TURMA) {
             System.out.println("O número de alunos é maior que o permitido.");
         } else if ((alunos.size()) < MIN_ALUNOS_TURMA) {
@@ -74,7 +74,7 @@ public class Turma {
         }
     }
 
-    public void adicionaAluno(Aluno aluno) { //adiciona um aluno da lista 
+    public void adicionaAluno(Aluno aluno) { 
         if ((this.alunos.size()) < MAX_ALUNOS_TURMA) {
             this.alunos.add(aluno);
         } else {
@@ -82,7 +82,7 @@ public class Turma {
         }
     }
 
-    public void removeAluno() { //remove o ultimo aluno da lista
+    public void removeAluno() { 
         if ((this.alunos.size()) > MIN_ALUNOS_TURMA) {
             int indice = this.alunos.size() - 1;
             this.alunos.remove(indice);
@@ -92,7 +92,7 @@ public class Turma {
         
     }
 
-    public void imprimeAlunos() { //imprime a lista de alunos atual com todas as informacoes
+    public void imprimeAlunos() { 
         for (int i = 1; i <alunos.size() + 1; i++) {
             System.out.printf("Aluno %d: \n", i);
             alunos.get(i - 1).imprime();

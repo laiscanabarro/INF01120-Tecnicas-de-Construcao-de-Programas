@@ -1,18 +1,18 @@
 public class PosicaoMapa4x4{
     private int x; //posicao do drone no grid
     private int y;
-    private static int numPosicoesOcupadas; //numero atual de drones existentes
+    private static int numPosicoesOcupadas; 
 
-    public PosicaoMapa4x4(){ //invoca o metodo reset
+    public PosicaoMapa4x4(){ 
         reset();
     } 
 
-    public PosicaoMapa4x4(int x, int y){ //atribui os valores passados para os atributos x e y
+    public PosicaoMapa4x4(int x, int y){ 
         this.x = x;
         this.y = y;
     }
 
-    public boolean setX(int x){ //atribui um valor x ao atributo this.x
+    public boolean setX(int x){ 
         if (this.x >=0 && this.x < 4){
             this.x = x;
             return true;
@@ -22,7 +22,7 @@ public class PosicaoMapa4x4{
         }
     }
 
-    public boolean setY(int y){ //atriubui um valor y ao atributo this.y
+    public boolean setY(int y){ 
         if (this.y >=0 && this.y < 4){
             this.y = y;
             return true;
@@ -32,24 +32,24 @@ public class PosicaoMapa4x4{
         }
     }
 
-    public int getX(){ //retorna o valor do atributo x
+    public int getX(){ 
         return this.x;
     }
 
-    public int getY(){ //retorna o valor do atributo y
+    public int getY(){ 
         return this.y;
     }
 
-    public static int getNumPosicoesOcupadas(){ //retona o valor do atributo numPosicoesOcupadas
+    public static int getNumPosicoesOcupadas(){ 
         return numPosicoesOcupadas;
     }
 
-    public PosicaoMapa4x4 copy(){ //retorna um objeto PosicaoMapa4x4
+    public PosicaoMapa4x4 copy(){ 
         PosicaoMapa4x4 posicao = new PosicaoMapa4x4(this.x, this.y);
         return posicao;
     }
 
-    public void imprime(){ //mostra na tela os valores dos atributos x e y
+    public void imprime(){ 
         System.out.printf("(%d, %d)\n", this.x, this.y);
     }
 
@@ -62,7 +62,7 @@ public class PosicaoMapa4x4{
         return dM;
     }
 
-    private void reset(){ //atribui zero aos atributos x e y
+    private void reset(){ 
         this.x = 0;
         this.y = 0;
     }

@@ -6,22 +6,22 @@ package lab4.poligonos;
  */
 public class TrianguloIsosceles extends Triangulo {
 
-    public TrianguloIsosceles(float lado1, float lado2, float lado3) { //construtor que utiliza o construtor da superclasse
+    public TrianguloIsosceles(float lado1, float lado2, float lado3) { 
         super(lado1, lado2, lado3);
     } 
 
     @Override
-    public double calculaArea() { //calcula a area a partir da altura calculada no metodo calculaAltura e a base
+    public double calculaArea() { 
         setAltura(calculaAltura());
         return super.calculaArea();
     }
 
     @Override
-    public void imprimeTipoPoligono() { //imprime Triângulo Isósceles
+    public void imprimeTipoPoligono() { 
         System.out.println("Triângulo Isósceles");
     }
 
-    private double calculaAltura() { //calcula a altura do triangulo isosceles a partir dos seus lados
+    private double calculaAltura() { 
         double ladoA = 0;
         double base = 0;
         double altura;

@@ -11,12 +11,12 @@ public abstract class Triangulo implements Poligono {
 
     //construtores
 
-    public Triangulo(double base, double altura) { //construtor da classe que recebe a altura e base como parametros
+    public Triangulo(double base, double altura) { 
         this.base = base;
         this.altura = altura;
     }
 
-    public Triangulo(double lado1, double lado2, double lado3) { //construtor da classe que recebe os lados como parametros
+    public Triangulo(double lado1, double lado2, double lado3) { 
         this.lado1 = lado1;
         this.lado2 = lado2;
         this.lado3 = lado3;
@@ -24,56 +24,56 @@ public abstract class Triangulo implements Poligono {
 
     //getters
 
-    public double getLado1() { //retorna o lado 1 do triangulo
+    public double getLado1() { 
         return this.lado1;
     }
 
-    public double getLado2() { //retorna o lado 2 do triangulo
+    public double getLado2() { 
         return this.lado2;
     }
 
-    public double getLado3() { //retorna o lado 3 do triangulo
+    public double getLado3() { 
         return this.lado3;
     }
 
-    public double getBase() { //retorna a base do triangulo
+    public double getBase() { 
         return this.base;
     }
 
-    public double getAltura() { //retorna a altura do triangulo
+    public double getAltura() { 
         return this.altura;
     }
 
     //setters
 
-    public void setLado1(double lado1) { //define um valor para o atributo lado 1
+    public void setLado1(double lado1) { 
         this.lado1 = lado1;
     }
 
-    public void setLado2(double lado2) { //define um valor para o atributo lado 2
+    public void setLado2(double lado2) { 
         this.lado2 = lado2;
     }
 
-    public void setLado3(double lado3) { //define um valor para o atributo lado 3
+    public void setLado3(double lado3) { 
         this.lado3 = lado3;
     }
 
-    public void setBase(double base) { //define um valor para o atributo base
+    public void setBase(double base) { 
         this.base = base;
     }
 
-    public void setAltura(double altura) { //define um valor para o atributo altura
+    public void setAltura(double altura) { 
         this.altura = altura;
     }
 
     //metodos da interface Poligonos
 
-    public static double calculaArea(double base, double altura){ //calcula a area do triangulo a partir dos parametros fornecidos
+    public static double calculaArea(double base, double altura){ 
         return (base*altura)/2;
     }
 
     @Override
-    public double calculaArea(){ //calcula a area do triangulo a partir de seus atributos de base e altura
+    public double calculaArea(){ 
         return(this.base*this.altura)/2;
     }
 

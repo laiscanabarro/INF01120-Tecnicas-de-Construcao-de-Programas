@@ -4,12 +4,12 @@ public class Aluno {
     private int numeroMatricula;
     private float indiceDesempenho;
 
-    public Aluno() { //reseta os atributos da classe
+    public Aluno() { 
         this.numeroMatricula = 0;
         this.indiceDesempenho = 0;
     }
 
-    public Aluno(int matricula, float indice) { //atribui os valores dos parametros aos atributos da classe
+    public Aluno(int matricula, float indice) { 
         this.numeroMatricula = matricula;
 
         if (indice > 10 || indice < 0) {
@@ -19,7 +19,7 @@ public class Aluno {
         }
     }
 
-    public void aumentaIndiceDesempenho(float valor) { //aumenta o indice de desempenho
+    public void aumentaIndiceDesempenho(float valor) { 
         if ((this.indiceDesempenho + valor) < 10) {
            this.indiceDesempenho += valor; 
         } else if (this.indiceDesempenho < 10 && this.indiceDesempenho + valor > 10) {
@@ -29,7 +29,7 @@ public class Aluno {
         }
     }
 
-    public void diminuiIndiceDesempenho(float valor) { //diminui o indice de desempenho
+    public void diminuiIndiceDesempenho(float valor) { 
         if ((this.indiceDesempenho - valor) > 0) {
             this.indiceDesempenho -= valor;
         } else if (this.indiceDesempenho > 0 && this.indiceDesempenho - valor < 0) {
@@ -39,7 +39,7 @@ public class Aluno {
         }
     }
 
-    public void imprime() { //imprime todas as informacoes do aluno
+    public void imprime() { 
         System.out.println("Número de matrícula: " + this.numeroMatricula);
         System.out.println("Índice de desempenho: " + this.indiceDesempenho);
     }

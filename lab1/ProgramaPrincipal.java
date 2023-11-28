@@ -1,12 +1,12 @@
 // PARTE 2 - Construcao da classe ProgramaPrincipal
 public class ProgramaPrincipal{
     public static void main(String[] args){
-        Imovel im1, im2; // declaracao dos objetos
+        Imovel im1, im2; 
 
-        im1 = new Imovel(); // instanciacao dos objetos
+        im1 = new Imovel(); 
         im2 = new Imovel(); 
         
-        // atribuicao dos atributos de im1
+        // im1
         im1.nQuartos = 2;
         im1.nBanheiros = 1;
         im1.temGaragem = false;
